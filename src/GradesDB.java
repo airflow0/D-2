@@ -9,17 +9,36 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.*;
 
 public class GradesDB
 {
 
-    private static XSSFRow row;
-    private static XSSFSheet sheet;
-    private static DataFormatter format;
-    private static XSSFWorkbook workbook;
+    public XSSFRow row;
+    public XSSFSheet sheet;
+    public DataFormatter format;
+    public XSSFWorkbook workbook;
 
+    public GradesDB()
+    {
+
+    }
+
+    public void loadSpreadsheet(String db)
+    {
+        try
+        {
+            File file = new File(db);
+            FileInputStream stream = new FileInputStream(file);
+            workbook = new XSSFWorkbook(stream);
+            stream.close();
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
+    }
     public Student getStudentByID(String id)
     {
         Student stu = new Student();
@@ -138,20 +157,73 @@ public class GradesDB
         }
         return projects;
     }
-    public GradesDB(String xlsx)
-    {
-        try
-        {
-            File file = new File(xlsx);
-            FileInputStream stream = new FileInputStream(file);
-            workbook = new XSSFWorkbook(stream);
 
-        }
-        catch (Exception ex)
+    public Map<String,ArrayList<Double>> populate(int pageIndex)
+    {
+        Map<String, ArrayList<Double>> temp = new HashMap<>();
+        sheet = workbook.getSheetAt(pageIndex);
+        XSSFRow row = sheet.getRow( 0);
+        XSSFCell cell = null;
+        for(int i = 1; i < row.getLastCellNum(); i++)
         {
-            ex.printStackTrace();
+            cell = row.getCell(i, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
+            temp.put(cell.toString(), getScores(i));
         }
+        return temp;
     }
 
+    public ArrayList<Double> getScores( int loc )
+    {
+        ArrayList<Double> temp = new ArrayList<>();
+        XSSFRow row = null;
+        XSSFCell cell = null;
+        for(int i = 1; i < sheet.getLastRowNum() + 1; i++)
+        {
+            row = sheet.getRow(i);
+            cell = row.getCell(loc, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
+            if(cell != null)
+            {
+                double data = Double.parseDouble(cell.toString());
+                temp.add(data);
+            }
+        }
+        return temp;
+    }
+    public Map<String,ArrayList<Double>> populateByStudent(int pageIndex)
+    {
+        Map<String, ArrayList<Double>> temp = new HashMap<>();
+        sheet = workbook.getSheetAt(pageIndex);
+        XSSFRow row;
+        XSSFCell cell = null;
+        for(int i = 1; i < sheet.getLastRowNum() + 1; i++)
+        {
+            row = sheet.getRow(i);
 
+            cell = row.getCell(0, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
+
+            if (cell != null)
+            {
+                //System.out.println(cell.toString());
+                temp.put(cell.toString(), getScoresByStudent(i));
+            }
+        }
+        return temp;
+    }
+
+    public ArrayList<Double> getScoresByStudent( int loc )
+    {
+        ArrayList<Double> temp = new ArrayList<>();
+        XSSFRow row = sheet.getRow(loc);
+        XSSFCell cell = null;
+        for(int i = 1; i < row.getLastCellNum(); i++)
+        {
+            cell = row.getCell(i, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
+            if(cell != null)
+            {
+                double data = Double.parseDouble(cell.toString());
+                temp.add(data);
+            }
+        }
+        return temp;
+    }
 }

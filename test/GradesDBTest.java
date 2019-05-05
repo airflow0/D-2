@@ -1,7 +1,13 @@
-
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.io.File;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import org.junit.After;
@@ -10,12 +16,20 @@ import org.junit.Test;
 
 public class GradesDBTest {
 
-	GradesDB db = null;
-    static final String GRADES_DB = "DB/GradesDatabase.xlsx";
+    GradesDB db = null;
+    static final String GRADES_DB_GOLDEN = "DB" + File.separator
+            + "GradesDatabase-goldenversion.xlsx";
+    static final String GRADES_DB = "DB" + File.separator
+            + "GradesDatabase.xlsx";
 
     @Before
     public void setUp() throws Exception {
-        db = new GradesDB(GRADES_DB);
+        FileSystem fs = FileSystems.getDefault();
+        Path dbfilegolden = fs.getPath(GRADES_DB_GOLDEN);
+        Path dbfile = fs.getPath(GRADES_DB);
+        Files.copy(dbfilegolden, dbfile, REPLACE_EXISTING);
+        db = new GradesDB();
+        db.loadSpreadsheet(GRADES_DB);
     }
 
     @After
@@ -53,15 +67,7 @@ public class GradesDBTest {
     public void testGetStudents2() {
         HashSet<Student> students = null;
         students = db.getStudents();
-        boolean found = false;
-        for (Student s : students) {
-            if (s.getName().compareTo("Cynthia Faast") == 0
-                    && s.getId().compareTo("1234514") == 0) {
-                found = true;
-                break;
-            }
-        }
-        assertTrue(found);
+        assertTrue(students.contains(new Student("Cynthia Faast", "1234514", db)));
     }
 
     @Test
@@ -83,4 +89,7 @@ public class GradesDBTest {
         Student student = db.getStudentByID("1234504");
         assertTrue(student.getName().compareTo("Shevon Wise") == 0);
     }
+
+    // Don't change above this point
+
 }

@@ -1,22 +1,29 @@
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        GradesDB grade = new GradesDB("DB/GradesDatabase.xlsx");
-        System.out.println("Number of Students: " + grade.getNumStudents());
-        System.out.println("Number of Assignemnts " + grade.getNumAssignments());
-        System.out.println("Number of Projects " + grade.getNumProjects());
-        HashSet<Student> students = grade.getStudents();
-        System.out.println("Number of Students in Hashset: " + students.size());
+        GradesDB grade = new GradesDB();
+        grade.loadSpreadsheet("DB/GradesDatabase.xlsx");
+        Assignment assign = new Assignment(grade);
 
-        for( Student s : students)
+        //assign.setStudent(grade.populateByStudent(3));
+        //assign.printByStudent();
+        Project proj = new Project(grade);
+        //proj.setProjectHash(grade.populate(5));
+        proj.setContributionHash(grade.populate(4));
+        //proj.setStudentCont(grade.populateByStudent(4));
+        //proj.setStudentProject(grade.populateByStudent(5));
+        proj.print();
+        proj.addContribution("PROJECT 4");
+        proj.addContributionGrade("PROJECT 4", 99.2);
+        if(proj.checkContribution("PROJECT 4", 99.1))
         {
-            System.out.println("Name: " + s.getName() + ", ID: " + s.getId());
+            System.out.println("True!");
         }
-        Student k = grade.getStudentByName("Freddie Catlay");
-        Student j = grade.getStudentByName("Christine Schaeffer");
-        Student e = grade.getStudentByID("1234501");
+        proj.print();
+
     }
 }

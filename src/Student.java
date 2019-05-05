@@ -15,6 +15,11 @@ public class Student
         this.studentName = name;
         this.studentID = id;
     }
+    public Student(String name, String id, GradesDB db)
+    {
+        this.studentName = name;
+        this.studentID = Integer.parseInt(id);
+    }
     public void setName( String name )
     {
         this.studentName = name;
@@ -43,4 +48,27 @@ public class Student
     {
         return this.studentAttendance;
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + getName().hashCode();
+        result = prime * result + String.valueOf(getStudentID()).hashCode();
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if(object instanceof Student) {
+            Student student = (Student) object;
+            if (this.getName().equals(student.getName()) && this.getId().equals(student.getId())) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
 }
