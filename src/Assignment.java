@@ -49,6 +49,30 @@ public class Assignment extends GradesDB
             return true;
         }
     }
+
+    public boolean findAssignment(String assign){
+        for(String name : assignment.keySet()){
+            if(assign.equals(name)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public double getAverageOfAssignment(String assign){
+        Double avg = 0.0;
+        Double numOfList = 0.0;
+        ArrayList<Double> assignmentGrades = assignment.get(assign);
+        for(int i = 0; i < assignmentGrades.size(); i++){
+            avg += assignmentGrades.get(i);
+            numOfList++;
+        }
+
+        return avg / numOfList;
+    }
+
+
     public Double getAverage()
     {
         Double avg = 0.0;

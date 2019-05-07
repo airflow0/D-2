@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1021fe63-b504-4156-8c88-2f5672df04dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/D-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/D-2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DB/GradesDatabase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/DB/GradesDatabase.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Compute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradesDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradesDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/D-2/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D-2/Assignment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/D-2/GradesDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D-2/GradesDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/D-2/META-INF/D-2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/D-2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D-2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/D-2/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D-2/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/D-2/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D-2/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/D-2/GradesDBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/D-2/GradesDBTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/GradesDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradesDBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,10 +28,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assignment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="94">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3736#3737#0" expanded="true" />
+                <element signature="e#3849#3850#0" expanded="true" />
+                <element signature="e#3939#3940#0" expanded="true" />
+                <element signature="e#4046#4047#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GradesDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3162">
-              <caret line="197" column="52" selection-start-line="197" selection-start-column="52" selection-end-line="197" selection-end-column="52" />
+            <state relative-caret-position="100">
+              <caret line="149" column="28" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,28 +54,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9486">
-              <caret line="591" selection-start-line="591" selection-end-line="591" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Downloads/poi-bin-4.1.0-20190412/poi-4.1.0/poi-4.1.0.jar!/org/apache/poi/util/IOUtils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="238">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3310#3311#0" expanded="true" />
@@ -90,11 +81,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/GradesDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+            <state relative-caret-position="2222">
+              <caret line="144" column="7" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,20 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -132,27 +123,32 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>assignment</find>
+      <find>project</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/GradesDBTest.java" />
         <option value="$PROJECT_DIR$/src/Student.java" />
         <option value="$PROJECT_DIR$/src/Compute.java" />
         <option value="$PROJECT_DIR$/src/GradesDB.java" />
-        <option value="$PROJECT_DIR$/src/Assignment.java" />
         <option value="$PROJECT_DIR$/src/Project.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Assignment.java" />
+        <option value="$PROJECT_DIR$/test/GradesDBTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="393" />
-    <option name="y" value="58" />
-    <option name="width" value="1079" />
-    <option name="height" value="1196" />
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -185,10 +181,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557085068967" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/poi-bin-4.1.0-20190412/poi-4.1.0/lib/commons-compress-1.18.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557214378687" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../poi-bin-4.1.0-20190412/poi-4.1.0/lib/commons-compress-1.18.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -208,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.GradesDBTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="D-2" />
@@ -227,12 +227,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GradesDBTest.testAddAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="D-2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GradesDBTest" />
+      <option name="METHOD_NAME" value="testAddAssignment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.GradesDBTest" />
+      <item itemvalue="JUnit.GradesDBTest.testAddAssignment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GradesDBTest.testAddAssignment" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -256,14 +268,24 @@
     <history-entry file="GradesDBTest - 2019.05.04 at 20h 08m 22s.xml">
       <configuration name="GradesDBTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GradesDBTest - 2019.05.06 at 22h 06m 41s.xml">
+      <configuration name="GradesDBTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GradesDBTest_testAddAssignment - 2019.05.07 at 03h 08m 56s.xml">
+      <configuration name="GradesDBTest.testAddAssignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GradesDBTest_testAddAssignment - 2019.05.07 at 03h 12m 39s.xml">
+      <configuration name="GradesDBTest.testAddAssignment" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="38935000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09062003" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24283305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -272,8 +294,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28371006" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3250444" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3153153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -281,7 +303,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32969603" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -300,10 +322,32 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Compute.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Integer.java" />
+    <entry file="jar://$PROJECT_DIR$/../poi-bin-4.1.0-20190412/poi-4.1.0/poi-4.1.0.jar!/org/apache/poi/util/IOUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5272">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="94">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3736#3737#0" expanded="true" />
+            <element signature="e#3849#3850#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#4046#4047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -312,32 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GradesDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3162">
-          <caret line="197" column="52" selection-start-line="197" selection-start-column="52" selection-end-line="197" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9486">
-          <caret line="591" selection-start-line="591" selection-end-line="591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/poi-bin-4.1.0-20190412/poi-4.1.0/poi-4.1.0.jar!/org/apache/poi/util/IOUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/GradesDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+        <state relative-caret-position="100">
+          <caret line="149" column="28" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -346,25 +366,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="238">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3310#3311#0" expanded="true" />
@@ -383,6 +393,16 @@
             <element signature="e#3977#3978#0" expanded="true" />
             <element signature="e#4055#4056#0" expanded="true" />
             <element signature="e#4098#4099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/GradesDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2222">
+          <caret line="144" column="7" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

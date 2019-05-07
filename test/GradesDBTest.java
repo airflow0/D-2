@@ -1,6 +1,5 @@
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.io.File;
 import java.nio.file.FileSystem;
@@ -92,4 +91,56 @@ public class GradesDBTest {
 
     // Don't change above this point
 
+    @Test
+    public void testAverageAssignmentGrade(){
+
+    }
+
+    @Test
+    public void testAddAssignment(){
+        Assignment assignment = new Assignment(db);
+        assignment.addAssignment("TestAssignment");
+        assertTrue(assignment.findAssignment("TestAssignment"));
+    }
+
+    @Test
+    public void addGradeToAssignment(){
+        Assignment assignment = new Assignment(db);
+        assignment.addAssignment("TestAssignment");
+        assertTrue(assignment.findAssignment("TestAssignment"));
+
+        assignment.addSingleGrade("TestAssignment", 80.0);
+        double assignmentAvg = assignment.getAverageOfAssignment("TestAssignment");
+        assertTrue(assignmentAvg == 80.0);
+    }
+
+    @Test
+    public void addContributionGrade(){
+        Project proj = new Project(db);
+        proj.addContribution("PROJECT 4");
+        proj.addContributionGrade("PROJECT 4", 99.2);
+        assertTrue(proj.checkContribution("PROJECT 4", 99.2));
+    }
+
+
+    @Test
+    public void testAddStudent(){
+        db.addStudent("Gerald Tan");
+        Student student = db.getStudentByName("Gerald Tan");
+        assertNotNull(student);
+    }
+
+    @Test
+    public void testAddProject(){
+        Project project = new Project(db);
+        project.addProject("Project 1");
+        assertTrue(project.findProject("Project 1"));
+    }
+
+    @Test
+    public void testAddGradeProject(){
+        Project project = new Project(db);
+        project.addGrade("Project 1", 80.9);
+        assertTrue(project.checkAvgGrade("Project 1", 80.9));
+    }
 }
